@@ -2,9 +2,11 @@ function redireccionar(){
     document.location.href="enlaces.html";
   }
 
+let reto = 0; 
+
 function changeImage(imagen) {
-    if (typeof (imagenes[1]) != "undefined") {
-        comprobar(imagen);
+    if (typeof (imagenes[1]) != "undefined" && reto < imagenes.length) {
+        imagenes.pop();
         var i, j, k;
         i = imagenes.length;
         let ruta1 = "imagen/"
@@ -20,6 +22,7 @@ function changeImage(imagen) {
         
         document.getElementById('challenge1').src = ruta1;
         document.getElementById('challenge2').src = ruta2;
+        reto++;
         
     }else{
         document.getElementById('pregunta').innerHTML = "FIN DEL JUEGO";
@@ -32,18 +35,6 @@ function changeImage(imagen) {
         document.body.style.backgroundSize="100% 100%"
         setTimeout ("redireccionar()", 3000);
     }
-}
-
-function comprobar(respuesta){
-    let i = imagenes.pop();
-    if(respuesta == 'challenge1'){
-        score+=i["score1"];
-    }else{
-        score+=i["score2"];
-    }
-    
-    document.getElementById('score').innerHTML = "score:"+score;
-    
 }
 
 let imagenes = [

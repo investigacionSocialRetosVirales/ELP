@@ -7,10 +7,7 @@
 .principal{
     display: flex;
     flex-direction: column;
-    border:1px black solid;
-    border-radius: 3em;
-    width: 80%;
-    height: 40%;
+    width: 50%;
     margin:auto auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -28,8 +25,9 @@ body{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.493);
     background-image: url("fondo/fondo.png");
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: 100%;
 }
 
 
@@ -50,9 +48,9 @@ body{
     display: flex;
     flex-direction: row;
     width: 80%;
-    height: 15em;
+    height: 14em;
     margin-bottom: 1em;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 header{
