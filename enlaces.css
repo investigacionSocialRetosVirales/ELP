@@ -8,49 +8,38 @@ html,body{
     height: 100%;
 }
 
+body{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+}
+
 a{
     text-decoration: none;
     font-size: 2em;
     color:black;
     visibility: hidden;
+    border:1px black dotted;
     width: 14em;
     height: 10em;
 }
+
+div a{
+	visibility:visible;
+	
+}
+
+.imgpeque{
+	width:7em;
+	height:3em;
+}
+
+
 
 a img{
     width: 14em;
     height: 10em;
 }
-
-.cardInfo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    border: 1px solid black;
-}
-
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
