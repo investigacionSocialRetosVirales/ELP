@@ -7,7 +7,7 @@
 .principal{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     margin:auto auto;
     margin-top: auto;
     margin-bottom: auto;
@@ -19,15 +19,19 @@ html,body{
     color:white;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+html{
     background-color: rgba(0, 0, 0, 0.493);
     background-image: url("fondo/fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 
@@ -38,20 +42,24 @@ body{
 
 .challenge{
     display: block;
-    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 15em;
     height: 100%;
 }
 
 .imagenes{
-    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
+    align-content: space-around;
     width: 80%;
     height: 14em;
     margin-bottom: 1em;
     margin-top: 2em;
 }
+
 
 header{
     width: 100%;
