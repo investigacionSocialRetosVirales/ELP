@@ -9,12 +9,18 @@ html,body{
 }
 
 body{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid{
     display: grid;
     align-items: center;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto auto auto;
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
+    margin-top: 3em;
 }
 
 a{
@@ -27,19 +33,54 @@ a{
     height: 10em;
 }
 
-div a{
-	visibility:visible;
-	
-}
-
-.imgpeque{
-	width:7em;
-	height:3em;
-}
-
-
-
 a img{
     width: 14em;
     height: 10em;
+}
+
+.licencia a{
+    visibility: visible;
+    font-size: 1em;
+}
+
+.licencia a img{
+    width:auto;
+    height: auto;
+}
+
+.encuesta{
+    margin-left:auto;
+    margin-right:2%;
+    color:white;
+    background-color: red;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    visibility: visible;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
+    
+}
+
+.encuesta:hover{
+    background-color: purple;
+}
+
+header{
+    width: 100%;
+    height: 3em;
+    background-color: blue;
+    display: flex;
+    position: fixed;
+}
+
+header h2{
+    color: white;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
