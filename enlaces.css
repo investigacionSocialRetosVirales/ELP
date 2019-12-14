@@ -1,56 +1,86 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     /*border:1px red solid;*/
 }
 
-html,body{
+html,
+body {
     height: 100%;
 }
 
-a{
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-column-gap: 0.5em;
+    grid-row-gap: 0.5em;
+    margin-top: 3em;
+}
+
+a {
     text-decoration: none;
     font-size: 2em;
-    color:black;
+    color: black;
     visibility: hidden;
+    border: 1px black dotted;
     width: 14em;
     height: 10em;
 }
 
-a img{
+a img {
     width: 14em;
     height: 10em;
 }
 
-.cardInfo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    border: 1px solid black;
+.licencia a {
+    visibility: visible;
+    font-size: 1em;
 }
 
-.button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
+.licencia a img {
+    width: auto;
+    height: auto;
+}
+
+.encuesta {
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    background-color: red;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    visibility: visible;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
+    height: auto;
+}
+
+.encuesta:hover {
+    background-color: purple;
+}
+
+header {
+    width: 100%;
+    height: 3em;
+    background-color: blue;
+    display: flex;
+    position: fixed;
+}
+
+header h2 {
+    color: white;
     text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-  }
-  
-  .button:hover {background-color: #3e8e41}
-  
-  .button:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+    margin-left: 1em;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
