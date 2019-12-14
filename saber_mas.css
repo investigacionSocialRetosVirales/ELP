@@ -1,0 +1,29 @@
+div {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    color: #111;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+}
+
+.licence {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    color: #685206;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 24px;
+    text-align: justify;
+    text-justify: inter-word;
+}

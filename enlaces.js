@@ -13,6 +13,7 @@ let noticias = ["notice1",
 
 function mostrar(noticia){
     document.getElementById(noticia).style.visibility = "visible";
+    
 }
 
 function aleatorio(){
@@ -20,7 +21,7 @@ function aleatorio(){
     i = noticias.length;
     if(typeof(noticias[0]) == "undefined"){
         detener();
-        document.getElementById("info").style.visibility = "visible";
+        //document.getElementById("info").style.visibility = "visible";
     }else{
         j = Math.floor(Math.random() * i);
         k = noticias[i - 1];

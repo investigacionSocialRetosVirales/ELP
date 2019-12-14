@@ -1,65 +1,73 @@
-*{
+* {
     padding: 0;
-    margin:0;
+    margin: 0;
     /*border:1px red solid;*/
 }
 
-.principal{
+.principal {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin:auto auto;
+    width: 80%;
+    margin: auto auto;
     margin-top: auto;
     margin-bottom: auto;
-    
 }
 
-html,body{
+html,
+body {
     height: 100%;
-    color:white;
+    color: white;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+html {
     background-color: rgba(0, 0, 0, 0.493);
     background-image: url("fondo/fondo.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-
-.pregunta{
+.pregunta {
     text-align: center;
 }
 
-.challenge{
+.challenge {
     display: block;
-    margin: auto auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 15em;
     height: 100%;
 }
 
-.imagenes{
-    margin: auto auto;
+.imagenes {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: row;
+    align-content: space-around;
     width: 80%;
     height: 14em;
     margin-bottom: 1em;
     margin-top: 2em;
 }
 
-header{
+header {
     width: 100%;
 }
 
-.contador{
+.contador {
     margin-top: 1em;
     margin-left: auto;
     margin-right: 1em;
-    width:10%;
+    width: 10%;
+}
+
+footer>a {
+    color: white
 }
